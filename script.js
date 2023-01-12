@@ -13,7 +13,7 @@ function createGridItems(gridSize) {
     gridContainer.removeChild(gridItems[0]);
   }
 
-  for (let i = 0; i < gridSize*gridSize; i++) {
+  for (let i = 0; i < gridSize * gridSize; i++) {
     let gridItem = document.createElement("div");
     gridItem.className = "grid-item";
     gridContainer.appendChild(gridItem);
