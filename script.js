@@ -36,3 +36,5 @@ function updateGridSize() {
   gridContainer.style.gridTemplateColumns = `repeat(${newGridSize}, 2fr)`;
   gridContainer.style.gridTemplateRows = `repeat(${newGridSize}, 2fr)`;
 }
+
+
