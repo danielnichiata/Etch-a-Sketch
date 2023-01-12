@@ -26,12 +26,12 @@ createGridItems(16);
 function changeItemsColor() {
   this.style.backgroundColor = "black";
 }
+const slider = document.getElementById("gridSizeSlider");
 
-const bttnChangeSize = document.querySelector("button");
-bttnChangeSize.onclick = windowsAlert;
+slider.addEventListener("input", updateGridSize);
 
-function windowsAlert() {
-  const newGridSize = Number(prompt("Insira um tamanho para o grid?"));
+function updateGridSize() {
+  const newGridSize = this.value;
   createGridItems(newGridSize);
   gridContainer.style.gridTemplateColumns = `repeat(${newGridSize}, 2fr)`;
   gridContainer.style.gridTemplateRows = `repeat(${newGridSize}, 2fr)`;
